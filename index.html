@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> CS FA1 </title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Andrea Nice V. Apego, initial-scale=1.0">
+	<meta name="keyboards"
+content="div.anchor.externalcss">
+	<meta name="revised
+content="17/11/2023">
+	<link href="style.css">
+</head>
+    <style>
+        a.one:link {
+            color: red;
+            background-color: grey;
+            border: 10px double blue;
+            transition: 1s;
+            text-decoration: none;
+        }
+		
+        a.one:active {
+            color: black;
+            background-color: pink;
+            border: 10px dotted green;
+            text-decoration: none;
+            font-size: 200%;
+        }
+
+        a.two:link {
+            color: red;
+            background-color: grey;
+            border: 10px double blue;
+            transition: 1s;
+            text-decoration: none;
+        }
+
+        a.two:active {
+            color: black;
+            background-color: pink;
+            border: 10px dotted green;
+            text-decoration: none;
+            font-size: 200%;
+        }
+
+        p {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 10px double black;
+            margin-top: 20px;
+            transition: 1s;
+        }
+
+        .box:target{
+					background-color: purple;
+		
+		}
+		
+		
+		
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BUTTONS</h1>
+    </header>
+
+    <section>
+        <div>
+            <p><a class="one" href='#box1'>This link changes color</a></p>
+            <p><a class="two" href='#box2'>This link changes font-size</a></p>
+        </div>
+
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+    </section>
+
+</body>
+
+</html>
